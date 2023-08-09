@@ -12,7 +12,7 @@ const Lichnie = () => {
               Ф.И.О. (полностью)
             </td>
             <td colSpan={2}>
-              <input></input>
+              <input type="text"></input>
             </td>
           </tr>
           <tr>
