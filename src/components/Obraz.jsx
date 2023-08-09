@@ -54,7 +54,7 @@ const Obraz = () => {
               аспирантура, спец. школа и т.д.
             </td>
             <td colSpan={2}>
-              <input></input>
+              <input type="text"></input>
             </td>
           </tr>
         </tbody>
