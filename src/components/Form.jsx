@@ -11,7 +11,7 @@ function Form() {
     return (
         <div>
             <h3 className="heading">АНКЕТА КАНДИДАТА</h3>
-            <form>
+            <form action='https://echo.htmlacademy.ru'>
                 <Lichnie />
                 <Obraz />
                 <Znaniya />
@@ -19,6 +19,7 @@ function Form() {
                 <Vajno />
                 <Dopolnitelnaya />
                 <Rekomendatsiya />
+                <button type='GET' className='begin-button' style={{marginBottom: "5rem", display: 'block', width: "100%", textAlign: "center"}}>Yuborish</button>
             </form>
         </div>
     )

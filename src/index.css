@@ -155,4 +155,5 @@ input:focus {
   background-color: var(--th-bg-color);
   font-weight: bold;
   padding: 1.2rem 2.4rem;
+  cursor: pointer;
 }
