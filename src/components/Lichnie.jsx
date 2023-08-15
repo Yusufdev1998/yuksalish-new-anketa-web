@@ -18,11 +18,11 @@ const Lichnie = () => {
           <tr>
             <td className="title-td">Дата рождения:</td>
             <td>
-              <input></input>
+              <input type="datetime-local"></input>
             </td>
             <td className="title-td">Место рождения:</td>
             <td>
-              <input></input>
+              <input type="text"></input>
             </td>
           </tr>
           <tr>
@@ -43,7 +43,7 @@ const Lichnie = () => {
           <tr>
             <td className="title-td">E-mail:</td>
             <td>
-              <input type="text" name="" />
+              <input type="email" name="" />
             </td>
             <td className="title-td">Другие контакты :</td>
             <td>

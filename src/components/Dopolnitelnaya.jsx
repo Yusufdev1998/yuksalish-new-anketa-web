@@ -25,7 +25,7 @@ function Dopolnitelnaya() {
                 <table className="table">
                     <thead>
                         <tr>
-                            <th className='title-td' colSpan={5}>Наличие авто</th>
+                            <th className='title-td' colSpan={5}>Водительские права</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -36,12 +36,12 @@ function Dopolnitelnaya() {
                             <th className="title-td">D</th>
                             <th className="title-td">E</th>
                         </tr>
-                        <tr>
-                            <td><input type="text" /></td>
-                            <td><input type="text" /></td>
-                            <td><input type="text" /></td>
-                            <td><input type="text" /></td>
-                            <td><input type="text" /></td>
+                        <tr style={{textAlign: "center"}}>
+                            <td><input className='checkbox' type="checkbox"/></td>
+                            <td><input className='checkbox' type="checkbox"/></td>
+                            <td><input className='checkbox' type="checkbox"/></td>
+                            <td><input className='checkbox' type="checkbox"/></td>
+                            <td><input className='checkbox' type="checkbox"/></td>
                         </tr>
                     </tbody>
                 </table>
