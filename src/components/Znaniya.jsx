@@ -23,21 +23,21 @@ function Znaniya() {
         <tbody>
           <tr>
             <td className='title-td'>Узбекский</td>
-            <th><input type="text" /></th>
-            <th><input type="text" /></th>
-            <th><input type="text" /></th>
+            <th><input className='checkbox' type="checkbox" value="письмо"/></th>
+            <th><input className='checkbox' type="checkbox" value="чтение"/></th>
+            <th><input className='checkbox' type="checkbox" value="разговорный"/></th>
           </tr>
           <tr>
             <td className='title-td'>Русский</td>
-            <th><input type="text" /></th>
-            <th><input type="text" /></th>
-            <th><input type="text" /></th>
+            <th><input className='checkbox' type="checkbox" value="письмо"/></th>
+            <th><input className='checkbox' type="checkbox" value="чтение"/></th>
+            <th><input className='checkbox' type="checkbox" value="разговорный"/></th>
           </tr>
           <tr>
             <td className='title-td'>Английский</td>
-            <th><input type="text" /></th>
-            <th><input type="text" /></th>
-            <th><input type="text" /></th>
+            <th><input className='checkbox' type="checkbox" value="письмо"/></th>
+            <th><input className='checkbox' type="checkbox" value="чтение"/></th>
+            <th><input className='checkbox' type="checkbox" value="разговорный"/></th>
           </tr>
         </tbody>
       </table>
@@ -48,21 +48,69 @@ function Znaniya() {
         <tbody>
           <tr>
             <td className='title-td'>MS Word</td>
-            <th><input type="text" /></th>
+            <th>
+              <select name="">
+                <option value="не знаю">не знаю</option>
+                <option value="слабо">слабо</option>
+                <option value="средне">средне</option>
+                <option value="хорошо">хорошо</option>
+                <option value="в совершенстве">в совершенстве</option>
+              </select>
+            </th>
             <td className='title-td'>1С:</td>
-            <th><input type="text" /></th>
+            <th>
+              <select name="">
+                <option value="не знаю">не знаю</option>
+                <option value="слабо">слабо</option>
+                <option value="средне">средне</option>
+                <option value="хорошо">хорошо</option>
+                <option value="в совершенстве">в совершенстве</option>
+              </select>
+            </th>
           </tr>
           <tr>
             <td className='title-td'>MS Excel</td>
-            <th><input type="text" /></th>
+            <th>
+              <select name="">
+                <option value="не знаю">не знаю</option>
+                <option value="слабо">слабо</option>
+                <option value="средне">средне</option>
+                <option value="хорошо">хорошо</option>
+                <option value="в совершенстве">в совершенстве</option>
+              </select>
+            </th>
             <td className='title-td'>Интернет</td>
-            <th><input type="text" /></th>
+            <th>
+              <select name="">
+                <option value="не знаю">не знаю</option>
+                <option value="слабо">слабо</option>
+                <option value="средне">средне</option>
+                <option value="хорошо">хорошо</option>
+                <option value="в совершенстве">в совершенстве</option>
+              </select>
+            </th>
           </tr>
           <tr>
             <td className='title-td'>Power Point</td>
-            <th><input type="text" /></th>
+            <th>
+              <select name="">
+                <option value="не знаю">не знаю</option>
+                <option value="слабо">слабо</option>
+                <option value="средне">средне</option>
+                <option value="хорошо">хорошо</option>
+                <option value="в совершенстве">в совершенстве</option>
+              </select>
+            </th>
             <td className='title-td'>Web-платформы</td>
-            <th><input type="text" /></th>
+            <th>
+              <select name="">
+                <option value="не знаю">не знаю</option>
+                <option value="слабо">слабо</option>
+                <option value="средне">средне</option>
+                <option value="хорошо">хорошо</option>
+                <option value="в совершенстве">в совершенстве</option>
+              </select>
+            </th>
           </tr>
         </tbody>
       </table>

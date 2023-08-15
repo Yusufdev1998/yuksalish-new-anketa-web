@@ -129,6 +129,9 @@ input {
   border: none;
   padding: 0.5rem;
 }
+input:focus {
+  outline: 3px dashed #123456;
+}
 
 .title-td {
   background-color: var(--th-bg-color);
@@ -138,4 +141,19 @@ input {
 }
 .center {
   text-align: center;
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+}
+
+.begin-button {
+  text-decoration: none;
+  color: #123456;
+  border: 2px solid #123456;
+  background-color: var(--th-bg-color);
+  font-weight: bold;
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
 }
