@@ -9,6 +9,11 @@ export const words = {
     ru: "Выберите язык для регистрации.",
     уз: "Рўйҳатдан ўтиш учун тилни танланг.",
   },
+  acces_select: {
+    uz: "Tilni tanlang.",
+    ru: "Выберите язык.",
+    уз: "Tилни танланг.",
+  },
   acces_button: {
     uz: "Boshlash",
     ru: "начинать",
@@ -124,6 +129,11 @@ export const words = {
     ru: "3. Знания и навыки",
     уз: "3. Билим ва кўникмалар",
   },
+  knowledge_two: {
+    uz: "3.1. Siz qaysi tillarda gapira olasiz?",
+    ru: "3.1. Какими языками Вы владеете?",
+    уз: "3.1. Сиз қайси тилларда гапира оласиз?",
+  },
   languages: {
     uz: "Til",
     ru: "Язык",
@@ -164,6 +174,11 @@ export const words = {
     ru: "Английский",
     уз: "Инглизча",
   },
+  know_komp: {
+    uz: "3.2. Kompyuterni bilish darajasi? (javob variantlari: - bilmayman, - ozroq, - o'rtacha, - yaxshi, - mukammal)",
+    ru: "3.2. Степень владения ПК? (варианты ответов: - не знаю, - слабо,  - средне, -  хорошо, -  в совершенстве)",
+    уз: "3.2. Компьютерни билиш даражаси? (жавоб вариантлари: - билмайман, - озроқ, - ўртача, - яхши, - мукаммал)",
+  },
   word: {
     ru: "MS Word",
     uz: "MS Word",
@@ -194,10 +209,35 @@ export const words = {
     ru: "Web-платформы",
     уз: "Веб платформалар",
   },
+  ne_znayu: {
+    uz: "Bilmayman",
+    ru: "не знаю",
+    уз: "Билмайман",
+  },
+  slabo: {
+    uz: "Ozroq",
+    ru: "слабо",
+    уз: "Озроқ",
+  },
+  sredne: {
+    uz: "O'rtacha",
+    ru: "средне",
+    уз: "Ўртача",
+  },
+  xorosho: {
+    uz: "Yaxshi",
+    ru: "хорошо",
+    уз: "Яхши",
+  },
+  v_sovershenstve: {
+    uz: "Mukammal",
+    ru: "в совершенстве",
+    уз: "Мукаммал",
+  },
   job: {
-    uz: "Oxirgi joydan boshlab ish tajribasini (shu jumladan norasmiy)",
-    ru: " Укажите опыт работы (включая неофициальный), начиная с последнего места",
-    уз: "Охирги жойдан бошлаб иш тажрибасини (шу жумладан норасмий)",
+    uz: "4.Oxirgi joydan boshlab ish tajribasi (shu jumladan norasmiy)",
+    ru: "4. Укажите опыт работы (включая неофициальный), начиная с последнего места",
+    уз: "4.Охирги жойдан бошлаб иш тажрибаси (шу жумладан норасмий)",
   },
   job_year: {
     uz: "Yil va oy",
@@ -259,7 +299,17 @@ export const words = {
     ru: " Что для Вас важно в работе? ",
     уз: "Ишда сиз учун нима муҳим?",
   },
-  section: {
+  clom2: {
+    uz: "1 dan 10 gacha ustuvorlikni belgilang (bu erda 1 eng muhim, 10 eng muhim emas).",
+    ru: "Расставьте приоритеты от 1 до 10 (где 1 – наиболее важно, 10 – наименее важно).",
+    уз: "1 дан 10 гача устуворликни белгиланг (бу ерда 1 энг муҳим, 10 энг муҳим эмас).",
+  },
+  clom3: {
+    uz: "Raqamlar takrorlanmasligi kerak.",
+    ru: "Цифры не должны повторяться. ",
+    уз: "Рақамлар такрорланмаслиги керак.",
+  },
+  section0: {
     uz: "ISH HAQQI",
     ru: "ЗАРАБОТНАЯ ПЛАТА",
     уз: "ИШ ҲАҚҚИ",
@@ -309,7 +359,7 @@ export const words = {
     ru: "ПЕРСПЕКТИВА КАРЬЕРНОГО РОСТА",
     уз: "КАРИЕРА ЎСИШ ПEРСПEКТИВАСИ",
   },
-  zero: {
+  zero0: {
     uz: "Biznesingizning 3 (uch) afzalliklarini ko'rsating:",
     ru: "Укажите 3 (три) Ваших деловых достоинства:",
     уз: "Бизнесингизнинг 3 (уч) афзалликларини кўрсатинг:",
@@ -370,9 +420,9 @@ export const words = {
     ru: "Ожидаемая заработная плата",
   },
   dopolnonie: {
-    uz: "Qoshimcha",
-    уз: "Қошимча",
-    ru: " 17. Дополнительная информация",
+    uz: "17.Qoshimcha",
+    уз: "17.Қошимча",
+    ru: "17.Дополнительная информация",
   },
   avto: {
     uz: "Shahsiy avtomobil",
@@ -394,30 +444,20 @@ export const words = {
     уз: "Ҳайдовчилик гувоҳномаси",
     ru: "Водительские права",
   },
-  harfi1: {
-    ru: "A",
-    uz: "A",
-    уз: "A",
+  kto: {
+    uz: "18. Sizni kim tavsiya qila oladi? (To'liq ism, lavozim, telefon)",
+    уз: "18. Сизни ким тавсия қила олади? (Тўлиқ исм, лавозим, телефон)",
+    ru: "18. Кто на Вас может датьрекомендацию? (Ф.И.О., должность, телефон)",
   },
-  harfi2: {
-    ru: "B",
-    uz: "B",
-    уз: "B",
+  nastoyashim: {
+    uz: "Shu bilan men taqdim etilgan ma'lumotlarning to'g'riligini tasdiqlayman va shaxsiy ma'lumotlarimni tekshirish va qayta ishlashga qarshi emasman.",
+    уз: "Шу билан мен тақдим этилган маълумотларнинг тўғрилигини тасдиқлайман ва шахсий маълумотларимни текшириш ва қайта ишлашга қарши эмасман.",
+    ru: "Настоящим я подтверждаю достоверность предоставленной информации и не возражаю против проверки и обработки моих персональных данных. ",
   },
-  harfi3: {
-    ru: "C",
-    uz: "C",
-    уз: "C",
-  },
-  harfi4: {
-    ru: "D",
-    uz: "D",
-    уз: "D",
-  },
-  harfi5: {
-    ru: "E",
-    uz: "E",
-    уз: "E",
+  otpravka: {
+    uz: "Yuborish",
+    уз: "Юбориш",
+    ru: "Отправка",
   },
 };
 

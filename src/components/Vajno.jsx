@@ -1,44 +1,45 @@
 import React from 'react'
+import getData, { words } from '../../public/data/getData';
 
-function Vajno() {
+function Vajno({lang}) {
     return (
         <div style={{ marginTop: "1rem" }}>
-            <span className="secondary-heading">Что для Вас важно в работе?</span><br />
-            <span className="secondary-heading">Расставьте приоритеты от 1 до 10 (где 1 – наиболее важно, 10 – наименее важно).</span><br />
-            <span className="secondary-heading">Цифры не должны повторяться. </span>
+            <span className="secondary-heading">{words.clom1[lang]}</span><br />
+            <span className="secondary-heading">{words.clom2[lang]}</span><br />
+            <span className="secondary-heading">{words.clom3[lang]}</span>
 
             <table className="table">
                 <thead></thead>
                 <tbody>
                     <tr>
-                        <td className="title-td">ЗАРАБОТНАЯ ПЛАТА</td>
-                        <td><input type="text" /></td>
-                        <td className="title-td">МОРАЛЬНЫЙ КЛИМАТ В КОЛЛЕКТИВЕ</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.section0[lang]}</td>
+                        <td><input name={words.section0["uz"]} type="text" /></td>
+                        <td className="title-td">{words.section5[lang]}</td>
+                        <td><input name={words.section5["uz"]} type="text" /></td>
                     </tr>
                     <tr>
-                        <td className="title-td">СТАБИЛЬНОСТЬ РАБОТЫ</td>
-                        <td><input type="text" /></td>
-                        <td className="title-td">РАБОТА В ОФИСЕ</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.section1[lang]}</td>
+                        <td><input name={words.section1["uz"]} type="text" /></td>
+                        <td className="title-td">{words.section6[lang]}</td>
+                        <td><input name={words.section6["uz"]} type="text" /></td>
                     </tr>
                     <tr>
-                        <td className="title-td">НОВЫЕ НАВЫКИ (ОПЫТ)</td>
-                        <td><input type="text" /></td>
-                        <td className="title-td">ПРЕСТИЖ КОМПАНИИ</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.section2[lang]}</td>
+                        <td><input name={words.section2["uz"]} type="text" /></td>
+                        <td className="title-td">{words.section7[lang]}</td>
+                        <td><input name={words.section7["uz"]} type="text" /></td>
                     </tr>
                     <tr>
-                        <td className="title-td">ГИБКИЙ ГРАФИК РАБОТЫ</td>
-                        <td><input type="text" /></td>
-                        <td className="title-td">БЛИЗОСТЬ РАБОТЫ К ДОМУ</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.section3[lang]}</td>
+                        <td><input name={words.section3["uz"]} type="text" /></td>
+                        <td className="title-td">{words.section8[lang]}</td>
+                        <td><input name={words.section8["uz"]} type="text" /></td>
                     </tr>
                     <tr>
-                        <td className="title-td">ИНТЕРЕСНАЯ РАБОТА</td>
-                        <td><input type="text" /></td>
-                        <td className="title-td">ПЕРСПЕКТИВА КАРЬЕРНОГО РОСТА</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.section4[lang]}</td>
+                        <td><input name={words.section4["uz"]} type="text" /></td>
+                        <td className="title-td">{words.section9[lang]}</td>
+                        <td><input name={words.section9["uz"]} type="text" /></td>
                     </tr>
                 </tbody>
 
@@ -49,63 +50,63 @@ function Vajno() {
                 <tbody>
                     <tr>
                         <td className="title-td">6.</td>
-                        <td className="title-td">Укажите 3 (три) Ваших деловых достоинства:</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.zero0[lang]}</td>
+                        <td><input name={words.zero0["uz"]} type="text" /></td>
                     </tr>
                     <tr>
                         <td className="title-td">7.</td>
-                        <td className="title-td">Какие у Вас есть недостатки?</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.zero1[lang]}</td>
+                        <td><input name={words.zero1["uz"]} type="text" /></td>
                     </tr>
                     <tr>
                         <td className="title-td">8.</td>
-                        <td className="title-td">Какие знания и навыки вы бы хотели получить?</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.zero2[lang]}</td>
+                        <td><input name={words.zero2["uz"]} type="text" /></td>
                     </tr>
                     <tr>
                         <td className="title-td">9.</td>
-                        <td className="title-td">За какие недостатки в работе, по Вашему, можно уволить человека?</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.zero3[lang]}</td>
+                        <td><input name={words.zero3["uz"]} type="text" /></td>
                     </tr>
                     <tr>
                         <td className="title-td">10.</td>
-                        <td className="title-td">Вы готовы отлучаться в командировки, на какой период?</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.zero4[lang]}</td>
+                        <td><input name={words.zero4["uz"]} type="text" /></td>
                     </tr>
                     <tr>
                         <td className="title-td">11.</td>
-                        <td className="title-td">Привлекались ли Вы к административной или уголовной ответственности и по какой статье УК РУ?</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.zero5[lang]}</td>
+                        <td><input name={words.zero5["uz"]} type="text" /></td>
                     </tr>
                     <tr>
                         <td className="title-td">12.</td>
-                        <td className="title-td">Как долго Вы в поиске работы (сколько времени Вы не работали):</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.zero6[lang]}</td>
+                        <td><input name={words.zero6["uz"]} type="text" /></td>
                     </tr>
                     <tr>
                         <td className="title-td" rowSpan={2}>13.</td>
 
-                        <td className="title-td">Есть ли у Вас знакомые или родственники, работающие в компании «YUKSALISH? </td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.zero7[lang]}</td>
+                        <td><input name={words.zero7["uz"]} type="text" /></td>
                     </tr>
                     <tr>
-                        <td className="title-td">Если Да, укажите ФИО, должность сотрудника:</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.zero8[lang]}</td>
+                        <td><input name={words.zero8["uz"]} type="text" /></td>
                     </tr>
                     <tr>
                         <td className="title-td">14.</td>
-                        <td className="title-td">Укажите 3 (три) Ваших деловых достоинства:</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.zero9[lang]}</td>
+                        <td><input name={words.zero9["uz"]} type="text" /></td>
                     </tr>
                     <tr>
                         <td className="title-td">15.</td>
-                        <td className="title-td">Укажите 3 (три) Ваших деловых достоинства:</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.zero10[lang]}</td>
+                        <td><input name={words.zero1["uz"]} type="text" /></td>
                     </tr>
                     <tr>
                         <td className="title-td">16.</td>
-                        <td className="title-td">Укажите 3 (три) Ваших деловых достоинства:</td>
-                        <td><input type="text" /></td>
+                        <td className="title-td">{words.zero11[lang]}</td>
+                        <td><input name={words.zero1["uz"]} type="text" /></td>
                     </tr>
                 </tbody>
             </table>

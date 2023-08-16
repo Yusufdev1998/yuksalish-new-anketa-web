@@ -14,8 +14,8 @@ function Acces() {
         <div className='container' style={{ textAlign: "center", height: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "2rem" }}>
             <h1>{words.acces_title[lang]}</h1>
             <h2>{words.acces_lang[lang]}</h2>
-            <select onChange={handleLang} name="language" required>
-                <option value="ru"></option>
+            <select className='acces-select' onChange={handleLang} name="language" required>
+                <option value="ru">{words.acces_select[lang]}</option>
                 <option value="ru">Русский</option>
                 <option value="uz">O'zbek</option>
                 <option value="уз">Ўзбек</option>
