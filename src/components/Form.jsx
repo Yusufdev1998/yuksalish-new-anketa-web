@@ -6,20 +6,22 @@ import Opit from "./Opit"
 import Vajno from "./Vajno"
 import Dopolnitelnaya from "./Dopolnitelnaya"
 import Rekomendatsiya from "./Rekomendatsiya";
+import { words } from '../../public/data/getData';
 
 function Form() {
+    const lang = window.localStorage.getItem("lang") || "ru"
     return (
         <div>
-            <h3 className="heading">АНКЕТА КАНДИДАТА</h3>
+            <h3 className="heading" style={{textTransform: "uppercase"}}>{words.anketa_title[lang]}</h3>
             <form action='https://echo.htmlacademy.ru'>
-                <Lichnie />
-                <Obraz />
-                <Znaniya />
-                <Opit />
-                <Vajno />
-                <Dopolnitelnaya />
-                <Rekomendatsiya />
-                <button type='GET' className='begin-button' style={{marginBottom: "5rem", display: 'block', width: "100%", textAlign: "center"}}>Yuborish</button>
+                <Lichnie lang={lang} />
+                <Obraz lang={lang}/>
+                <Znaniya lang={lang}/>
+                <Opit lang={lang}/>
+                <Vajno lang={lang}/>
+                <Dopolnitelnaya lang={lang}/>
+                <Rekomendatsiya lang={lang}/>
+                <button type='GET' className='begin-button' style={{marginBottom: "5rem", display: 'block', width: "100%", textAlign: "center"}}>{words.otpravka[lang]}</button>
             </form>
         </div>
     )

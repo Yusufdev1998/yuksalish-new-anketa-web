@@ -1,114 +1,115 @@
 import React from 'react'
+import getData, { words } from '../../public/data/getData';
 
-function Znaniya() {
+function Znaniya({lang}) {
   return (
-    <div style={{marginTop: "1rem"}}>
-      <span className="secondary-heading">3. Знания и навыки</span><br/>
+    <div className='znaniya' style={{marginTop: "1rem"}}>
+      <span className="secondary-heading">{words.knowledge[lang]}</span><br/>
 
-      <span className='additional-title'>3.1.Какими языками Вы владеете?</span>
+      <span className='additional-title'>{words.knowledge_two[lang]}</span>
       <table className="table">
         <thead>
-            <th className='title-td' rowSpan={3}>Язык</th>
+            <th className='title-td' rowSpan={3}>{words.languages[lang]}</th>
             <tr>
                 <th className='title-td' colSpan={3}>
-                    Степень владения
+                  {words.stapen[lang]}
                 </th>
             </tr>
             <tr>
-                <th className='title-td'>письмо</th>
-                <th className='title-td'>чтение</th>
-                <th className='title-td'>разговорный</th>
+                <th className='title-td'>{words.pismo[lang]}</th>
+                <th className='title-td'>{words.chten[lang]}</th>
+                <th className='title-td'>{words.razgovar[lang]}</th>
             </tr>
         </thead>
         <tbody>
           <tr>
-            <td className='title-td'>Узбекский</td>
-            <th><input className='checkbox' type="checkbox" value="письмо"/></th>
-            <th><input className='checkbox' type="checkbox" value="чтение"/></th>
-            <th><input className='checkbox' type="checkbox" value="разговорный"/></th>
+            <td className='title-td'>{words.uzbek[lang]}</td>
+            <th><input name='uzbek-tili' className='checkbox' type="checkbox" value="письмо"/></th>
+            <th><input name='uzbek-tili' className='checkbox' type="checkbox" value="чтение"/></th>
+            <th><input name='uzbek-tili' className='checkbox' type="checkbox" value="разговорный"/></th>
           </tr>
           <tr>
-            <td className='title-td'>Русский</td>
-            <th><input className='checkbox' type="checkbox" value="письмо"/></th>
-            <th><input className='checkbox' type="checkbox" value="чтение"/></th>
-            <th><input className='checkbox' type="checkbox" value="разговорный"/></th>
+            <td className='title-td'>{words.rustili[lang]}</td>
+            <th><input name='rus-tili' className='checkbox' type="checkbox" value="письмо"/></th>
+            <th><input name='rus-tili' className='checkbox' type="checkbox" value="чтение"/></th>
+            <th><input name='rus-tili' className='checkbox' type="checkbox" value="разговорный"/></th>
           </tr>
           <tr>
-            <td className='title-td'>Английский</td>
-            <th><input className='checkbox' type="checkbox" value="письмо"/></th>
-            <th><input className='checkbox' type="checkbox" value="чтение"/></th>
-            <th><input className='checkbox' type="checkbox" value="разговорный"/></th>
+            <td className='title-td'>{words.angilish[lang]}</td>
+            <th><input name='ingliz-tili' className='checkbox' type="checkbox" value="письмо"/></th>
+            <th><input name='ingliz-tili' className='checkbox' type="checkbox" value="чтение"/></th>
+            <th><input name='ingliz-tili' className='checkbox' type="checkbox" value="разговорный"/></th>
           </tr>
         </tbody>
       </table>
 
 
-      <span className='additional-title' >3.2. Степень владения ПК? (варианты ответов: - не знаю, - слабо,  - средне, -  хорошо, -  в совершенстве)</span>
+      <span className='additional-title' >{words.know_komp[lang]}</span>
       <table className="table">
         <tbody>
           <tr>
             <td className='title-td'>MS Word</td>
             <th>
-              <select name="">
-                <option value="не знаю">не знаю</option>
-                <option value="слабо">слабо</option>
-                <option value="средне">средне</option>
-                <option value="хорошо">хорошо</option>
-                <option value="в совершенстве">в совершенстве</option>
+              <select name="MS Word">
+                <option value={words.ne_znayu["uz"]}>{words.ne_znayu[lang]}</option>
+                <option value={words.slabo["uz"]}>{words.slabo[lang]}</option>
+                <option value={words.sredne["uz"]}>{words.sredne[lang]}</option>
+                <option value={words.xorosho["uz"]}>{words.xorosho[lang]}</option>
+                <option value={words.v_sovershenstve["uz"]}>{words.v_sovershenstve[lang]}</option>
               </select>
             </th>
             <td className='title-td'>1С:</td>
             <th>
-              <select name="">
-                <option value="не знаю">не знаю</option>
-                <option value="слабо">слабо</option>
-                <option value="средне">средне</option>
-                <option value="хорошо">хорошо</option>
-                <option value="в совершенстве">в совершенстве</option>
+              <select name="1C">
+              <option value={words.ne_znayu["uz"]}>{words.ne_znayu[lang]}</option>
+                <option value={words.slabo["uz"]}>{words.slabo[lang]}</option>
+                <option value={words.sredne["uz"]}>{words.sredne[lang]}</option>
+                <option value={words.xorosho["uz"]}>{words.xorosho[lang]}</option>
+                <option value={words.v_sovershenstve["uz"]}>{words.v_sovershenstve[lang]}</option>
               </select>
             </th>
           </tr>
           <tr>
             <td className='title-td'>MS Excel</td>
             <th>
-              <select name="">
-                <option value="не знаю">не знаю</option>
-                <option value="слабо">слабо</option>
-                <option value="средне">средне</option>
-                <option value="хорошо">хорошо</option>
-                <option value="в совершенстве">в совершенстве</option>
+              <select name="MS Excel">
+              <option value={words.ne_znayu["uz"]}>{words.ne_znayu[lang]}</option>
+                <option value={words.slabo["uz"]}>{words.slabo[lang]}</option>
+                <option value={words.sredne["uz"]}>{words.sredne[lang]}</option>
+                <option value={words.xorosho["uz"]}>{words.xorosho[lang]}</option>
+                <option value={words.v_sovershenstve["uz"]}>{words.v_sovershenstve[lang]}</option>
               </select>
             </th>
-            <td className='title-td'>Интернет</td>
+            <td className='title-td'>{words.internet[lang]}</td>
             <th>
-              <select name="">
-                <option value="не знаю">не знаю</option>
-                <option value="слабо">слабо</option>
-                <option value="средне">средне</option>
-                <option value="хорошо">хорошо</option>
-                <option value="в совершенстве">в совершенстве</option>
+              <select name="Internet">
+              <option value={words.ne_znayu["uz"]}>{words.ne_znayu[lang]}</option>
+                <option value={words.slabo["uz"]}>{words.slabo[lang]}</option>
+                <option value={words.sredne["uz"]}>{words.sredne[lang]}</option>
+                <option value={words.xorosho["uz"]}>{words.xorosho[lang]}</option>
+                <option value={words.v_sovershenstve["uz"]}>{words.v_sovershenstve[lang]}</option>
               </select>
             </th>
           </tr>
           <tr>
             <td className='title-td'>Power Point</td>
             <th>
-              <select name="">
-                <option value="не знаю">не знаю</option>
-                <option value="слабо">слабо</option>
-                <option value="средне">средне</option>
-                <option value="хорошо">хорошо</option>
-                <option value="в совершенстве">в совершенстве</option>
+              <select name="Power Point">
+              <option value={words.ne_znayu["uz"]}>{words.ne_znayu[lang]}</option>
+                <option value={words.slabo["uz"]}>{words.slabo[lang]}</option>
+                <option value={words.sredne["uz"]}>{words.sredne[lang]}</option>
+                <option value={words.xorosho["uz"]}>{words.xorosho[lang]}</option>
+                <option value={words.v_sovershenstve["uz"]}>{words.v_sovershenstve[lang]}</option>
               </select>
             </th>
-            <td className='title-td'>Web-платформы</td>
+            <td className='title-td'>{words.web_platform[lang]}</td>
             <th>
-              <select name="">
-                <option value="не знаю">не знаю</option>
-                <option value="слабо">слабо</option>
-                <option value="средне">средне</option>
-                <option value="хорошо">хорошо</option>
-                <option value="в совершенстве">в совершенстве</option>
+              <select name={words.web_platform["uz"]}>
+              <option value={words.ne_znayu["uz"]}>{words.ne_znayu[lang]}</option>
+                <option value={words.slabo["uz"]}>{words.slabo[lang]}</option>
+                <option value={words.sredne["uz"]}>{words.sredne[lang]}</option>
+                <option value={words.xorosho["uz"]}>{words.xorosho[lang]}</option>
+                <option value={words.v_sovershenstve["uz"]}>{words.v_sovershenstve[lang]}</option>
               </select>
             </th>
           </tr>

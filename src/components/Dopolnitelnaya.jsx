@@ -1,31 +1,32 @@
 import React from 'react'
+import getData, { words } from '../../public/data/getData';
 
-function Dopolnitelnaya() {
+function Dopolnitelnaya({lang}) {
     return (
         <div style={{ marginTop: "2rem" }}>
-            <span className="secondary-heading">17. Дополнительная информация</span>
+            <span className="secondary-heading">{words.dopolnonie[lang]}</span>
             <div className='table'  style={{display: "flex", gap: "2rem"}}>
                 <table className="table">
                     <thead>
                         <tr>
-                            <th className='title-td' colSpan={2}>Наличие авто</th>
+                            <th className='title-td' colSpan={2}>{words.avto[lang]}</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td className="title-td">Марка</td>
-                            <td><input type="text" /></td>
+                            <td className="title-td">{words.marka[lang]}</td>
+                            <td><input name='' type="text" /></td>
                         </tr>
                         <tr>
-                            <td className="title-td">Год выпуска</td>
-                            <td><input type="text" /></td>
+                            <td className="title-td">{words.yili[lang]}</td>
+                            <td><input name='' type="text" /></td>
                         </tr>
                     </tbody>
                 </table>
                 <table className="table">
                     <thead>
                         <tr>
-                            <th className='title-td' colSpan={5}>Водительские права</th>
+                            <th className='title-td' colSpan={5}>{words.toifasi[lang]}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -37,11 +38,11 @@ function Dopolnitelnaya() {
                             <th className="title-td">E</th>
                         </tr>
                         <tr style={{textAlign: "center"}}>
-                            <td><input className='checkbox' type="checkbox"/></td>
-                            <td><input className='checkbox' type="checkbox"/></td>
-                            <td><input className='checkbox' type="checkbox"/></td>
-                            <td><input className='checkbox' type="checkbox"/></td>
-                            <td><input className='checkbox' type="checkbox"/></td>
+                            <td><input name='' className='checkbox' type="checkbox"/></td>
+                            <td><input name='' className='checkbox' type="checkbox"/></td>
+                            <td><input name='' className='checkbox' type="checkbox"/></td>
+                            <td><input name='' className='checkbox' type="checkbox"/></td>
+                            <td><input name='' className='checkbox' type="checkbox"/></td>
                         </tr>
                     </tbody>
                 </table>

@@ -1,9 +1,10 @@
 import React from 'react'
+import getData, { words } from '../../public/data/getData';
 
-function Rekomendatsiya() {
+function Rekomendatsiya({lang}) {
     return (
         <div style={{ marginTop: "2rem", paddingBottom: "6rem"}}>
-            <span className="secondary-heading">18. Кто на Вас может датьрекомендацию? (Ф.И.О., должность, телефон)</span>
+            <span className="secondary-heading">{words.kto[lang]}</span>
             <table className='table'>
                 <thead></thead>
                 <tbody>
@@ -16,15 +17,11 @@ function Rekomendatsiya() {
                         <td><input type="text" /></td>
                     </tr>
                     <tr>
-                        <td className='title-td' style={{fontStyle: "italic"}} colSpan={2}>Настоящим я подтверждаю достоверность предоставленной информации и не возражаю против проверки и обработки моих персональных данных. </td>
+                        <td className='title-td' style={{fontStyle: "italic"}} colSpan={2}>{words.nastoyashim[lang]}</td>
                     </tr>
                 </tbody>
             </table>
 
-            <div style={{display: "inline-flex", marginTop: "3rem"}}>
-                <span className="secondary-heading" style={{display: "block", whiteSpace: 'nowrap'}}>Дата заполнения</span>
-                <input type="text" style={{borderBottom: "2px solid black"}}/>
-            </div>
         </div>
     )
 }

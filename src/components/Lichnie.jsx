@@ -1,69 +1,70 @@
 import React from "react";
+import getData, { words } from '../../public/data/getData';
 
-const Lichnie = () => {
+const Lichnie = ({ lang }) => {
   return (
     <div>
-      <span className="secondary-heading">1.Личные данные</span>
+      <span className="secondary-heading">{words.personal[lang]}</span>
       <table className="table">
         <thead></thead>
         <tbody>
           <tr>
             <td colSpan={2} className="title-td">
-              Ф.И.О. (полностью)
+              {words.fio[lang]}
             </td>
             <td colSpan={2}>
-              <input type="text"></input>
+              <input name={words.fio["uz"]} type="text"></input>
             </td>
           </tr>
           <tr>
-            <td className="title-td">Дата рождения:</td>
+            <td className="title-td">{words.date_of_birth[lang]}</td>
             <td>
-              <input type="datetime-local"></input>
+              <input name={words.date_of_birth["uz"]} type="datetime-local"></input>
             </td>
-            <td className="title-td">Место рождения:</td>
+            <td className="title-td">{words.place_of_birth[lang]}</td>
             <td>
-              <input type="text"></input>
-            </td>
-          </tr>
-          <tr>
-            <td className="title-td">Контактные телефоны:</td>
-            <td>
-              <label htmlFor="dom">Домашний:</label>
-              <input type="tel" name="" id="dom" />
-            </td>
-            <td>
-              <label htmlFor="mob">Мобильный:</label>
-              <input type="tel" name="" id="mob" />
-            </td>
-            <td>
-              <label htmlFor="rab">Рабочий:</label>
-              <input type="tel" name="" id="rab" />
+              <input name={words.place_of_birth["uz"]} type="text"></input>
             </td>
           </tr>
           <tr>
-            <td className="title-td">E-mail:</td>
+            <td className="title-td">{words.contact_tel[lang]}</td>
             <td>
-              <input type="email" name="" />
+              <label htmlFor="dom">{words.home_tel[lang]}</label>
+              <input type="tel" name={words.home_tel["uz"]} id="dom" />
             </td>
-            <td className="title-td">Другие контакты :</td>
             <td>
-              <input type="text" name="" />
+              <label htmlFor="mob">{words.cell_tel[lang]}</label>
+              <input type="tel" name={words.cell_tel["uz"]} id="mob" />
+            </td>
+            <td>
+              <label htmlFor="rab">{words.work_tel[lang]}</label>
+              <input type="tel" name={words.work_tel["uz"]} id="rab" />
+            </td>
+          </tr>
+          <tr>
+            <td className="title-td">{words.email[lang]}</td>
+            <td>
+              <input type="email" name={words.email["uz"]} />
+            </td>
+            <td className="title-td">{words.contakt[lang]}</td>
+            <td>
+              <input type="text" name={words.contact_tel["uz"]} />
             </td>
           </tr>
           <tr>
             <td colSpan={2} className="title-td">
-              Место регистрации (прописки)
+              {words.address_one[lang]}
             </td>
             <td colSpan={2}>
-              <input type="text" name="" />
+              <input type="text" name={words.address_one["uz"]} />
             </td>
           </tr>
           <tr>
             <td colSpan={2} className="title-td">
-              Место жительства (фактическое)
+              {words.address_two[lang]}
             </td>
             <td colSpan={2}>
-              <input type="text" name="" />
+              <input type="text" name={words.address_two["uz"]} />
             </td>
           </tr>
         </tbody>

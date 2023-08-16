@@ -1,60 +1,60 @@
 import React from "react";
+import getData, { words } from '../../public/data/getData';
 
-const Obraz = () => {
+const Obraz = ({ lang }) => {
   return (
     <div
       style={{
         marginTop: "10px",
       }}
     >
-      <span className="secondary-heading">2.Образование</span>
+      <span className="secondary-heading">{words.edu[lang]}</span>
       <table className="table">
         <thead>
           <tr>
-            <th className="title-td">Год поступления</th>
-            <th className="title-td">Год окончания</th>
+            <th className="title-td">{words.begin[lang]}</th>
+            <th className="title-td">{words.final[lang]}</th>
             <th className="title-td">
-              Название учебного заведения Факультет (отделение), город
+              {words.faculty[lang]}
             </th>
-            <th className="title-td">Специальность, квалификация</th>
+            <th className="title-td">{words.klafikatsiya[lang]}</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>
-              <input type="text" />
+              <input name={words.begin["uz"]} type="text" />
             </td>
             <td>
-              <input type="text" />
+              <input name={words.final["uz"]} type="text" />
             </td>
             <td>
-              <input type="text" />
+              <input name={words.faculty["uz"]} type="text" />
             </td>
             <td>
-              <input type="text" />
+              <input name={words.klafikatsiya["uz"]} type="text" />
             </td>
           </tr>
           <tr>
             <td>
-              <input type="text" />
+              <input name={words.begin["uz"]} type="text" />
             </td>
             <td>
-              <input type="text" />
+              <input name={words.final["uz"]} type="text" />
             </td>
             <td>
-              <input type="text" />
+              <input name={words.faculty["uz"]} type="text" />
             </td>
             <td>
-              <input type="text" />
+              <input name={words.klafikatsiya["uz"]} type="text" />
             </td>
           </tr>
           <tr>
             <td colSpan={2} className="title-td">
-              Специализированные тренинги, стажировки, курсы и семинары,
-              аспирантура, спец. школа и т.д.
+              {words.other[lang]}
             </td>
             <td colSpan={2}>
-              <input type="text"></input>
+              <input name={words.other["uz"]} type="text"></input>
             </td>
           </tr>
         </tbody>
