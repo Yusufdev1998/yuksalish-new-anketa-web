@@ -13,33 +13,33 @@ function Vajno({lang}) {
                 <tbody>
                     <tr>
                         <td className="title-td">{words.section0[lang]}</td>
-                        <td><input name={words.section0["uz"]} type="text" /></td>
+                        <td><input name={words.section0["uz"]} type="text" required/></td>
                         <td className="title-td">{words.section5[lang]}</td>
-                        <td><input name={words.section5["uz"]} type="text" /></td>
+                        <td><input name={words.section5["uz"]} type="text" required/></td>
                     </tr>
                     <tr>
                         <td className="title-td">{words.section1[lang]}</td>
-                        <td><input name={words.section1["uz"]} type="text" /></td>
+                        <td><input name={words.section1["uz"]} type="text" required/></td>
                         <td className="title-td">{words.section6[lang]}</td>
-                        <td><input name={words.section6["uz"]} type="text" /></td>
+                        <td><input name={words.section6["uz"]} type="text" required/></td>
                     </tr>
                     <tr>
                         <td className="title-td">{words.section2[lang]}</td>
-                        <td><input name={words.section2["uz"]} type="text" /></td>
+                        <td><input name={words.section2["uz"]} type="text" required/></td>
                         <td className="title-td">{words.section7[lang]}</td>
-                        <td><input name={words.section7["uz"]} type="text" /></td>
+                        <td><input name={words.section7["uz"]} type="text" required/></td>
                     </tr>
                     <tr>
                         <td className="title-td">{words.section3[lang]}</td>
-                        <td><input name={words.section3["uz"]} type="text" /></td>
+                        <td><input name={words.section3["uz"]} type="text" required/></td>
                         <td className="title-td">{words.section8[lang]}</td>
-                        <td><input name={words.section8["uz"]} type="text" /></td>
+                        <td><input name={words.section8["uz"]} type="text" required/></td>
                     </tr>
                     <tr>
                         <td className="title-td">{words.section4[lang]}</td>
-                        <td><input name={words.section4["uz"]} type="text" /></td>
+                        <td><input name={words.section4["uz"]} type="text" required/></td>
                         <td className="title-td">{words.section9[lang]}</td>
-                        <td><input name={words.section9["uz"]} type="text" /></td>
+                        <td><input name={words.section9["uz"]} type="text" required/></td>
                     </tr>
                 </tbody>
 
