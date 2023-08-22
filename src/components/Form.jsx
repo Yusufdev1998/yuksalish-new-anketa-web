@@ -23,9 +23,9 @@ function Form() {
                 <Vajno lang={lang}/>
                 <Dopolnitelnaya lang={lang}/>
                 <Rekomendatsiya lang={lang}/>
-                <Link to="/lastPage" className='begin-button' style={{marginBottom: "5rem", display: 'block', width: "100%", textAlign: "center"}}>
+                <button className='begin-button' style={{marginBottom: "5rem", display: 'block', width: "100%", textAlign: "center"}}>
                     {words.otpravka[lang]}
-                </Link>
+                </button>
             </form>
         </div>
     )
