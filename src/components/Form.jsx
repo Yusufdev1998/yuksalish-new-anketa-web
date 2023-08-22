@@ -7,8 +7,10 @@ import Vajno from "./Vajno"
 import Dopolnitelnaya from "./Dopolnitelnaya"
 import Rekomendatsiya from "./Rekomendatsiya";
 import { words } from '../../public/data/getData';
-
+import { Link } from 'react-router-dom';
+export const obj = []
 function Form() {
+    obj = [..."salom"]
     const lang = window.localStorage.getItem("lang") || "ru"
     return (
         <div>
@@ -21,10 +23,11 @@ function Form() {
                 <Vajno lang={lang}/>
                 <Dopolnitelnaya lang={lang}/>
                 <Rekomendatsiya lang={lang}/>
-                <button type='GET' className='begin-button' style={{marginBottom: "5rem", display: 'block', width: "100%", textAlign: "center"}}>{words.otpravka[lang]}</button>
+                <Link to="/lastPage" className='begin-button' style={{marginBottom: "5rem", display: 'block', width: "100%", textAlign: "center"}}>
+                    {words.otpravka[lang]}
+                </Link>
             </form>
         </div>
     )
 }
-
 export default Form

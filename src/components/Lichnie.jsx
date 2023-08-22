@@ -13,13 +13,13 @@ const Lichnie = ({ lang }) => {
               {words.fio[lang]}
             </td>
             <td colSpan={2}>
-              <input name={words.fio["uz"]} type="text"></input>
+              <input name={words.fio["uz"]} type="text" required></input>
             </td>
           </tr>
           <tr>
             <td className="title-td">{words.date_of_birth[lang]}</td>
             <td>
-              <input name={words.date_of_birth["uz"]} type="datetime-local"></input>
+              <input name={words.date_of_birth["uz"]} type="datetime-local" required></input>
             </td>
             <td className="title-td">{words.place_of_birth[lang]}</td>
             <td>
@@ -30,7 +30,7 @@ const Lichnie = ({ lang }) => {
             <td className="title-td">{words.contact_tel[lang]}</td>
             <td>
               <label htmlFor="dom">{words.home_tel[lang]}</label>
-              <input type="tel" name={words.home_tel["uz"]} id="dom" />
+              <input type="tel" name={words.home_tel["uz"]} id="dom" required/>
             </td>
             <td>
               <label htmlFor="mob">{words.cell_tel[lang]}</label>
@@ -56,7 +56,7 @@ const Lichnie = ({ lang }) => {
               {words.address_one[lang]}
             </td>
             <td colSpan={2}>
-              <input type="text" name={words.address_one["uz"]} />
+              <input type="text" name={words.address_one["uz"]} required/>
             </td>
           </tr>
           <tr>
@@ -64,7 +64,7 @@ const Lichnie = ({ lang }) => {
               {words.address_two[lang]}
             </td>
             <td colSpan={2}>
-              <input type="text" name={words.address_two["uz"]} />
+              <input type="text" name={words.address_two["uz"]} required/>
             </td>
           </tr>
         </tbody>
