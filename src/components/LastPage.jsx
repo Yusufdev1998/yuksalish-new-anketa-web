@@ -1,9 +1,8 @@
 import React from 'react'
 import getData, { words } from '../../public/data/getData';
-import Form, {obj} from './Form';
+import Form from './Form';
 
 function LastPage({lang}) {
-    console.log(obj);
   return (
     <div className='lastPage'>
         <div className="container">

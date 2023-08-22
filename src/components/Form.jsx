@@ -8,9 +8,8 @@ import Dopolnitelnaya from "./Dopolnitelnaya"
 import Rekomendatsiya from "./Rekomendatsiya";
 import { words } from '../../public/data/getData';
 import { Link } from 'react-router-dom';
-export const obj = []
+
 function Form() {
-    obj = [..."salom"]
     const lang = window.localStorage.getItem("lang") || "ru"
     return (
         <div>
