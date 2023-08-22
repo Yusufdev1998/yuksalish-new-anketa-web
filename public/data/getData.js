@@ -459,6 +459,17 @@ export const words = {
     уз: "Юбориш",
     ru: "Отправка",
   },
+
+  lastPage_title: {
+    uz: "Qayta tekshirish",
+    уз: "Қайта текшириш",
+    ru: "перепроверить",
+  },
+  lastPage_subtitle: {
+    uz: "Anketangizni yana bir bor tekshiring!",
+    уз: "Анкетангизни яна бир бор текширинг!",
+    ru: "Проверьте свое приложение еще раз!",
+  },
 };
 
 export default (text) => {

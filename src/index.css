@@ -169,3 +169,24 @@ input:focus {
   height: 30px;
   font-size: 1.8rem;
 }
+
+
+.lastPage {
+  text-align: center;
+}
+.lastPage h1, .lastPage h3 {
+  margin: 2rem 0;
+}
+.lastPage-table {
+  text-align: left;
+}
+.lastPage th, .lastPage td {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.lastPage-th {
+  background-color: #d9d9d9;
+}
+.lastPage-td {
+  color: #999;
+}
